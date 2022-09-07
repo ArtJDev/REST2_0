@@ -1,13 +1,13 @@
 package ru.netology.exceptions;
 
 public class UnauthorizedUser extends RuntimeException {
-    private final String user;
+    private final String message;
 
-    public UnauthorizedUser(String user) {
-        this.user = user;
+    public UnauthorizedUser(String message) {
+        this.message = message;
     }
-
-    public String getUser() {
-        return user;
+    @Override
+    public String getMessage() {
+        return message;
     }
 }
