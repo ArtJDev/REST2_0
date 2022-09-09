@@ -7,4 +7,7 @@ public class ErrorDetails {
         this.message = message;
     }
 
+    public String getMessage() {
+        return message;
+    }
 }
